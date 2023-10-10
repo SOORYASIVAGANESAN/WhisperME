@@ -15,4 +15,4 @@ while True:
     current_value = str(pd.read_sql_query('SELECT _check FROM change_table',cnxn)['_check'].tolist()[0])
     if current_value != previous_value:
         prev_value = current_value
-        #Write your code here
+        
