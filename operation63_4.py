@@ -48,7 +48,7 @@ file= gspread.authorize(creds)
 
 workbook= file.open("operation63project")
 sheet= workbook.sheet1
-"""
+
 def log_in_first_time():
     Sumbit= driver.find_element(By.XPATH,"//*[contains(text(), 'Log in')]")
     Sumbit.click()
@@ -75,7 +75,7 @@ def log_in_first_time():
     if driver.find_element(By.CLASS_NAME,'_ac8f'):
         driver.find_element(By.CLASS_NAME,'_ac8f').click()
     time.sleep(10)
-"""
+
 def send_mssg(sendto_id,sendto_mssg):
     #removing first  pop-ups sav-info
     try:
