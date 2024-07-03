@@ -119,20 +119,6 @@ for j in range(i,100):
             i=j
             break
 
-options = webdriver.ChromeOptions()
-options.add_argument('--user-data-dir=C:\\Users\\Hp\\AppData\\Local\\Google\\Chrome\\User Data')
-options.add_experimental_option("detach", True)
-options.add_argument('--profile-directory=Profile 2')
-
-url= "https://www.instagram.com/direct/inbox/"
-master_username= "if_i_were_true_abt_u"
-password= "$Pq12345678"
-#########################################################################################
-       
-driver = webdriver.Chrome(executable_path="E:\\c data\\Desktop\\operation63\\chromedriver.exe",chrome_options=options)
-driver.get(url)
-time.sleep(5)
-
 
 #clicking on "log in" button
 Sumbit= driver.find_element(By.XPATH,"//*[contains(text(), 'Log In')]")
